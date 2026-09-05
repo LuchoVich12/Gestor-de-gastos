@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Función para obtener categorías desde el archivo JSON local
 async function cargarCategorias() {
     try {
-    const response = await fetch("/json/categorias.json");
+    const response = await fetch("./json/categorias.json");
     if (!response.ok) throw new Error("Error al cargar categorías");
     
     categorias = await response.json();
